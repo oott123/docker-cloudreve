@@ -1,4 +1,4 @@
-FROM alpine
+FROM debian:bullseye
 
 ARG CLOUDREVE_VERSION="3.4.2"
 ARG ARCH="amd64"
