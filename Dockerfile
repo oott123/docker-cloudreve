@@ -1,4 +1,4 @@
-FROM marketplace.gcr.io/google/debian11
+FROM alpine
 
 ARG CLOUDREVE_VERSION "3.4.2"
 ARG ARCH "amd64"
