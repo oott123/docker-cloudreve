@@ -9,7 +9,7 @@ RUN wget -O /tmp/cloudreve.tar.gz https://github.com/cloudreve/Cloudreve/release
     chown root:root /cloudreve && \
     chmod 755 /cloudreve
 
-FROM debian:bullseye
+FROM gcr.io/distroless/base-debian11
 
 COPY --from=downloader /cloudreve /usr/local/bin/cloudreve
 WORKDIR /cloudreve
